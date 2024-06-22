@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.gates.all;
+entity bcdadd is
+port (a0,a1,a2,a3,b0,b1,b2,b3: in std_logic;
+ y0,y1,y2,y3,y4 :out std_logic);
+end entity;
+
+architecture struct of bcdadd is
+signal s0,s1,s2,s3, sig1,sig2,sig3,sig4, out1,out2,out3, sig5,sig6,sig7,sig8,sig9:std_logic;
+begin
+
+inst1 : add_half port map(A => a0, B => b0, S => s0,C => sig1);
+inst2 : f_add port map(A => a1, B => b1, CIN => sig1, S => s1,C => sig2);
+inst3 : f_add port map(A => a2, B => b2, CIN => sig2, S => s2,C => sig3);
+inst4 : f_add port map(A => a3, B => b3, CIN => sig3, S => s3,C => sig4);
+
+inst5 : add_half port map(A => s0, B => '0', S => y0,C =>sig5 );
+inst6 : f_add port map(A => s1, B => sig8, CIN => sig5, S => y1,C => sig6 );
+inst7 : f_add port map(A => s2, B => sig8, CIN => sig6, S => y2,C => sig7 );
+inst8 : f_add port map(A => s3, B => '0', CIN => sig7, S => y3,C => sig9);
+
+inst9 : AND_2 port map(A => s3, B => s2, Y => out1);
+inst10 : AND_2 port map(A => s3, B => s1, Y => out2);
+
+inst11 : OR_2 port map(A => out1, B => out2, Y => out3);
+inst12 : OR_2 port map(A => sig4, B => out3, Y => sig8);
+
+inst13 : OR_2 port map(A => sig8, B => '0', Y => y4);
+
+end architecture;
