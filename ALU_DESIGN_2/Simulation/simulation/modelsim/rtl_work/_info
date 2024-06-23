@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/iitnew/taskkkk2/ALU2/simulation/modelsim
+Ealu2
+Z1 w1719117930
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/iitnew/taskkkk2/ALU2/ALU2.vhd
+Z5 FC:/iitnew/taskkkk2/ALU2/ALU2.vhd
+l0
+L5 1
+VPDicb?Kb>8TnnCE`D@J3S2
+!s100 8XE`?ZMW>FI_7FE16nVmf1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1719117951
+!i10b 1
+Z8 !s108 1719117951.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/iitnew/taskkkk2/ALU2/ALU2.vhd|
+Z10 !s107 C:/iitnew/taskkkk2/ALU2/ALU2.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aa1
+R2
+R3
+DEx4 work 4 alu2 0 22 PDicb?Kb>8TnnCE`D@J3S2
+!i122 1
+l103
+L13 112
+VS4Z>?2zgi>WPJDViD=H]J3
+!s100 4UHi:m0T>Ul;9aCi=bEN<0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1718203642
+R2
+R3
+!i122 0
+R0
+Z14 8C:/iitnew/taskkkk2/ALU2/DUT.vhdl
+Z15 FC:/iitnew/taskkkk2/ALU2/DUT.vhdl
+l0
+L8 1
+VmTO;9jTO0^9ZR9Q5;8B[M0
+!s100 8m>k@fWA92fQ;<VZ5FJP=3
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/iitnew/taskkkk2/ALU2/DUT.vhdl|
+Z17 !s107 C:/iitnew/taskkkk2/ALU2/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 mTO;9jTO0^9ZR9Q5;8B[M0
+!i122 0
+l24
+L13 19
+V[@3hFO5^6JB7AOUS13LmV0
+!s100 NBnge><kelMPXlC5m6B6o0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Etestbench
+R13
+R3
+R2
+!i122 2
+R0
+Z18 8C:/iitnew/taskkkk2/ALU2/Testbench.vhdl
+Z19 FC:/iitnew/taskkkk2/ALU2/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+Z20 !s110 1719117952
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/iitnew/taskkkk2/ALU2/Testbench.vhdl|
+!s107 C:/iitnew/taskkkk2/ALU2/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+VcfzYFL`M2dnHzR=ze3?4I2
+!s100 @hPL<YhO9dTTb=2iMjmFP3
+R6
+31
+R20
+!i10b 1
+R8
+R21
+Z22 !s107 C:/iitnew/taskkkk2/ALU2/Testbench.vhdl|
+!i113 1
+R11
+R12
