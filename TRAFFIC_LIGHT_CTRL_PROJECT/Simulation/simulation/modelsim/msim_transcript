@@ -1,0 +1,104 @@
+# Reading pref.tcl
+# do TRAFFICLC_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/QUARTUS/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/TRAFFICLC/TRAFFICLC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:18:42 on Jun 14,2024
+# vcom -reportprogress 300 -93 -work work D:/TRAFFICLC/TRAFFICLC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TRAFFICLC
+# -- Compiling architecture behavioural of TRAFFICLC
+# End time: 15:18:42 on Jun 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/TRAFFICLC/T1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:18:42 on Jun 14,2024
+# vcom -reportprogress 300 -93 -work work D:/TRAFFICLC/T1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity T1
+# -- Compiling architecture Behavioral of T1
+# End time: 15:18:42 on Jun 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/TRAFFICLC/T5.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:18:42 on Jun 14,2024
+# vcom -reportprogress 300 -93 -work work D:/TRAFFICLC/T5.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity T5
+# -- Compiling architecture Behavioral of T5
+# End time: 15:18:42 on Jun 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/TRAFFICLC/EN42.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:18:42 on Jun 14,2024
+# vcom -reportprogress 300 -93 -work work D:/TRAFFICLC/EN42.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity en42
+# -- Compiling architecture Behavioral of en42
+# End time: 15:18:42 on Jun 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/TRAFFICLC/Testbench.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:18:42 on Jun 14,2024
+# vcom -reportprogress 300 -93 -work work D:/TRAFFICLC/Testbench.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity Testbench
+# -- Compiling architecture test of Testbench
+# End time: 15:18:42 on Jun 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 15:18:42 on Jun 14,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.testbench(test)
+# Loading ieee.numeric_std(body)
+# Loading work.trafficlc(behavioural)
+# Loading work.t1(behavioral)
+# Loading work.t5(behavioral)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.en42(behavioral)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Moulik Shaparia  Hostname: MOULIKSHAPARIA  ProcessID: 5892
+#           Attempting to use alternate WLF file "./wlft4s6c3f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4s6c3f
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 15:42:15 on Jun 14,2024, Elapsed time: 0:23:33
+# Errors: 0, Warnings: 2
