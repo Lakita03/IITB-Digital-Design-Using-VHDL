@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity EN42 is 
+    port (
+        D: in std_logic_vector(3 downto 0);
+        E: in std_logic;
+        A: out std_logic_vector(1 downto 0)
+    );
+end entity EN42;
+
+architecture behavioral of EN42 is
+begin
+    process(D, E)
+    begin
+        if E = '1' then
+            A(0) <= D(1) or D(3);
+            A(1) <= D(2) or D(3);
+        else
+            A <= (others => '0');
+        end if;
+    end process;
+end architecture behavioral;
